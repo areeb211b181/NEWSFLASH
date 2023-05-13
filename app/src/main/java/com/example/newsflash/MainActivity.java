@@ -27,3 +27,23 @@ public class MainActivity extends AppCompatActivity implements CategoryRVAdapter
     private CategoryRVAdapter categoryRVAdapter;
     private NewsRVAdapter newsRVAdapter;
 
+
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        newsRV = findViewById(R.id.idRVNews);
+        categoryRV = findViewById(R.id.idRVCategories);
+        loadingPB = findViewById(R.id.idPBLoading);
+        articlesArrayList = new ArrayList<>();
+        categoryRVModalArrayList = new ArrayList<>();
+        newsRVAdapter = new NewsRVAdapter(articlesArrayList,this);
+        categoryRVAdapter = new CategoryRVAdapter(categoryRVModalArrayList,this,this::onCategoryClick);
+        newsRV.setLayoutManager(new LinearLayoutManager(this));
+        newsRV.setAdapter(newsRVAdapter);
+        categoryRV.setAdapter(categoryRVAdapter);
+        getCategories();
+        getNews("All");
+        newsRVAdapter.notifyDataSetChanged();
