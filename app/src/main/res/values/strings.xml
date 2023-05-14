@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">NewsFlash</string>
+    <string name="title_activity_news_rv_item">news_rv_item</string>
 </resources>
