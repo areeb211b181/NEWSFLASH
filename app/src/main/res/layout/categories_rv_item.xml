@@ -31,8 +31,6 @@
 
             tools:ignore="DuplicateIds" />
 
-
-
         <TextView
 
             android:layout_width="match_parent"
