@@ -16,39 +16,46 @@
         >
 
 
-        <ImageView
+    <ImageView
 
-            android:layout_width="match_parent"
-
-
-
-            android:layout_height="match_parent"
-
-            android:id="@+id/idIVCategory"
-            android:src="@color/yellow"
-
-            android:scaleType="centerCrop"
-
-            tools:ignore="DuplicateIds" />
-
-        <TextView
-
-            android:layout_width="match_parent"
+        android:layout_width="match_parent"
 
 
 
-            android:layout_height="wrap_content"
+    android:layout_height="match_parent"
 
-            android:gravity="center"
+    android:id="@+id/idIVCategory"
+        android:src="@color/yellow"
 
-            android:layout_centerInParent="true"
+    android:scaleType="centerCrop"
 
-            android:text="Category"
-            android:textColor="@color/white"
-            android:textAlignment="center"
-            android:padding="3dp"
-            android:textStyle="bold"
-            android:id="@+id/idTVCategory"
-            />
+        tools:ignore="DuplicateIds" />
+
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+
+
+
+    android:layout_height="wrap_content"
+
+    android:gravity="center"
+
+    android:layout_centerInParent="true"
+
+    android:text="Category"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:padding="3dp"
+
+
+    android:textStyle="bold"
+
+
+
+    android:id="@+id/idTVCategory"
+        />
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
